@@ -1,0 +1,88 @@
+\hypertarget{classtransition__t}{}\section{Referencia de la Clase transition\+\_\+t}
+\label{classtransition__t}\index{transition\+\_\+t@{transition\+\_\+t}}
+
+
+Representa una transición para un estado y un símbolo de entrada.  
+
+
+
+
+{\ttfamily \#include $<$transition\+\_\+t.\+hpp$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtransition__t_a04ff8486138f334115c79cdfb4e72a78}{}\hyperlink{classtransition__t_a04ff8486138f334115c79cdfb4e72a78}{transition\+\_\+t} (\hyperlink{classstate}{state} \&src, \hyperlink{classstate}{state} \&dest, char symbol)\label{classtransition__t_a04ff8486138f334115c79cdfb4e72a78}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classstate}{state} $\ast$ \hyperlink{classtransition__t_aac5048fbc4307cc982437e393cf97c89}{get\+\_\+src} () const 
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classstate}{state} $\ast$ \hyperlink{classtransition__t_a91eb01ea36496fd40b84f5f68b598ca6}{get\+\_\+dest} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el estado final. \end{DoxyCompactList}\item 
+char \hyperlink{classtransition__t_a30f07640593000fa0994a852f803f8b6}{get\+\_\+symbol} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el símbolo necesario para la transición. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtransition__t_a7dd43b71a5592511682d1055bacc4e30}{}\hyperlink{classstate}{state} $\ast$ \hyperlink{classtransition__t_a7dd43b71a5592511682d1055bacc4e30}{src\+\_\+}\label{classtransition__t_a7dd43b71a5592511682d1055bacc4e30}
+
+\begin{DoxyCompactList}\small\item\em Estado inicial. \end{DoxyCompactList}\item 
+\hypertarget{classtransition__t_aa8b498692df1561ff2ca6a8146438a6b}{}\hyperlink{classstate}{state} $\ast$ \hyperlink{classtransition__t_aa8b498692df1561ff2ca6a8146438a6b}{dest\+\_\+}\label{classtransition__t_aa8b498692df1561ff2ca6a8146438a6b}
+
+\begin{DoxyCompactList}\small\item\em Estado al que se transita. \end{DoxyCompactList}\item 
+\hypertarget{classtransition__t_a7b2b2e8bcfbb66df6ac6f8666a59a8e7}{}char \hyperlink{classtransition__t_a7b2b2e8bcfbb66df6ac6f8666a59a8e7}{symbol\+\_\+}\label{classtransition__t_a7b2b2e8bcfbb66df6ac6f8666a59a8e7}
+
+\begin{DoxyCompactList}\small\item\em Símbolo de entrada para el estado inicial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una transición para un estado y un símbolo de entrada. 
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classtransition__t_a91eb01ea36496fd40b84f5f68b598ca6}{}\index{transition\+\_\+t@{transition\+\_\+t}!get\+\_\+dest@{get\+\_\+dest}}
+\index{get\+\_\+dest@{get\+\_\+dest}!transition\+\_\+t@{transition\+\_\+t}}
+\subsubsection[{get\+\_\+dest() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf state}$\ast$ transition\+\_\+t\+::get\+\_\+dest (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtransition__t_a91eb01ea36496fd40b84f5f68b598ca6}
+
+
+Devuelve el estado final. 
+
+\begin{DoxyReturn}{Devuelve}
+Puntero al estado final 
+\end{DoxyReturn}
+\hypertarget{classtransition__t_aac5048fbc4307cc982437e393cf97c89}{}\index{transition\+\_\+t@{transition\+\_\+t}!get\+\_\+src@{get\+\_\+src}}
+\index{get\+\_\+src@{get\+\_\+src}!transition\+\_\+t@{transition\+\_\+t}}
+\subsubsection[{get\+\_\+src() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf state}$\ast$ transition\+\_\+t\+::get\+\_\+src (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtransition__t_aac5048fbc4307cc982437e393cf97c89}
+
+
+Destructor. 
+
+Devuelve el estado inicial \begin{DoxyReturn}{Devuelve}
+Puntero al estado inicial 
+\end{DoxyReturn}
+\hypertarget{classtransition__t_a30f07640593000fa0994a852f803f8b6}{}\index{transition\+\_\+t@{transition\+\_\+t}!get\+\_\+symbol@{get\+\_\+symbol}}
+\index{get\+\_\+symbol@{get\+\_\+symbol}!transition\+\_\+t@{transition\+\_\+t}}
+\subsubsection[{get\+\_\+symbol() const }]{\setlength{\rightskip}{0pt plus 5cm}char transition\+\_\+t\+::get\+\_\+symbol (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classtransition__t_a30f07640593000fa0994a852f803f8b6}
+
+
+Devuelve el símbolo necesario para la transición. 
+
+\begin{DoxyReturn}{Devuelve}
+Símbolo para realizar la transición 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+transition\+\_\+t.\+hpp\end{DoxyCompactItemize}

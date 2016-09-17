@@ -1,0 +1,172 @@
+\hypertarget{classstate}{}\section{Referencia de la Clase state}
+\label{classstate}\index{state@{state}}
+
+
+Representa un estado del autómata.  
+
+
+
+
+{\ttfamily \#include $<$state.\+hpp$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classstate_aee920d9f534640451f22b3525f9cb9de}{}\hyperlink{classstate_aee920d9f534640451f22b3525f9cb9de}{state} ()\label{classstate_aee920d9f534640451f22b3525f9cb9de}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hyperlink{classstate_a4a06c3b99fef0260bb8de5e8d8ba2d16}{state} (int id, bool accept)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classstate_af2f12478890cae48ded72bf564f9d340}{}\hyperlink{classstate_af2f12478890cae48ded72bf564f9d340}{state} (const \hyperlink{classstate}{state} \&Q)\label{classstate_af2f12478890cae48ded72bf564f9d340}
+
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\hypertarget{classstate_a60216b51b01ca0ebe9786ec2da66568f}{}\hyperlink{classstate_a60216b51b01ca0ebe9786ec2da66568f}{$\sim$state} ()\label{classstate_a60216b51b01ca0ebe9786ec2da66568f}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classstate_a49f9a14bacf7ccd3180555a646e6a02f}{is\+\_\+accept} () const 
+\begin{DoxyCompactList}\small\item\em Obtiene si el estado es de aceptación. \end{DoxyCompactList}\item 
+bool \& \hyperlink{classstate_a5c4e93170fd515a2d3e6e9d392b29d2f}{get\+\_\+accept} ()
+\begin{DoxyCompactList}\small\item\em Obtiene si el estado es de aceptación. \end{DoxyCompactList}\item 
+int \hyperlink{classstate_a6e5e89c3ed6c2e2594bc1a8bf03bdc1e}{get\+\_\+id} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la I\+D del estado. \end{DoxyCompactList}\item 
+int \& \hyperlink{classstate_a68ce8440ba42436828362ded2edd8d87}{get\+\_\+id} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la I\+D del estado. \end{DoxyCompactList}\item 
+bool \hyperlink{classstate_ac9e58d75849a619942eedde3576ffefd}{operator==} (const \hyperlink{classstate}{state} \&Q) const 
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de comparación. \end{DoxyCompactList}\item 
+bool \hyperlink{classstate_a18a1f9add291e9aa896b8baa9ed1dbe4}{is\+\_\+deadstate} (vector$<$ \hyperlink{classtransition__t}{transition\+\_\+t} $>$)
+\begin{DoxyCompactList}\small\item\em Obtiene si el estado es de muerte. \end{DoxyCompactList}\item 
+\hypertarget{classstate_a8cd42463fb7015ac1bda015d6d662eb1}{}void {\bfseries print} ()\label{classstate_a8cd42463fb7015ac1bda015d6d662eb1}
+
+\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classstate_a60c5078c3ac59b85ac4b77157fe91d01}{}int \hyperlink{classstate_a60c5078c3ac59b85ac4b77157fe91d01}{id\+\_\+}\label{classstate_a60c5078c3ac59b85ac4b77157fe91d01}
+
+\begin{DoxyCompactList}\small\item\em I\+D del estado. \end{DoxyCompactList}\item 
+\hypertarget{classstate_ad16d75b8aaa4a1fed6eb97be5d107d77}{}bool \hyperlink{classstate_ad16d75b8aaa4a1fed6eb97be5d107d77}{accept\+\_\+}\label{classstate_ad16d75b8aaa4a1fed6eb97be5d107d77}
+
+\begin{DoxyCompactList}\small\item\em Indica si el estado es de aceptación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un estado del autómata. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classstate_a4a06c3b99fef0260bb8de5e8d8ba2d16}{}\index{state@{state}!state@{state}}
+\index{state@{state}!state@{state}}
+\subsubsection[{state(int id, bool accept)}]{\setlength{\rightskip}{0pt plus 5cm}state\+::state (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{bool}]{accept}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classstate_a4a06c3b99fef0260bb8de5e8d8ba2d16}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em id} & I\+D del estado \\
+\hline
+{\em accept} & Indica si el estado es de aceptación \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classstate_a5c4e93170fd515a2d3e6e9d392b29d2f}{}\index{state@{state}!get\+\_\+accept@{get\+\_\+accept}}
+\index{get\+\_\+accept@{get\+\_\+accept}!state@{state}}
+\subsubsection[{get\+\_\+accept()}]{\setlength{\rightskip}{0pt plus 5cm}bool\& state\+::get\+\_\+accept (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classstate_a5c4e93170fd515a2d3e6e9d392b29d2f}
+
+
+Obtiene si el estado es de aceptación. 
+
+\begin{DoxyReturn}{Devuelve}
+T\+R\+U\+E si el estado es de aceptación 
+\end{DoxyReturn}
+\hypertarget{classstate_a6e5e89c3ed6c2e2594bc1a8bf03bdc1e}{}\index{state@{state}!get\+\_\+id@{get\+\_\+id}}
+\index{get\+\_\+id@{get\+\_\+id}!state@{state}}
+\subsubsection[{get\+\_\+id() const }]{\setlength{\rightskip}{0pt plus 5cm}int state\+::get\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classstate_a6e5e89c3ed6c2e2594bc1a8bf03bdc1e}
+
+
+Devuelve la I\+D del estado. 
+
+\begin{DoxyReturn}{Devuelve}
+I\+D del estado 
+\end{DoxyReturn}
+\hypertarget{classstate_a68ce8440ba42436828362ded2edd8d87}{}\index{state@{state}!get\+\_\+id@{get\+\_\+id}}
+\index{get\+\_\+id@{get\+\_\+id}!state@{state}}
+\subsubsection[{get\+\_\+id()}]{\setlength{\rightskip}{0pt plus 5cm}int\& state\+::get\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classstate_a68ce8440ba42436828362ded2edd8d87}
+
+
+Devuelve la I\+D del estado. 
+
+\begin{DoxyReturn}{Devuelve}
+I\+D del estado 
+\end{DoxyReturn}
+\hypertarget{classstate_a49f9a14bacf7ccd3180555a646e6a02f}{}\index{state@{state}!is\+\_\+accept@{is\+\_\+accept}}
+\index{is\+\_\+accept@{is\+\_\+accept}!state@{state}}
+\subsubsection[{is\+\_\+accept() const }]{\setlength{\rightskip}{0pt plus 5cm}bool state\+::is\+\_\+accept (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classstate_a49f9a14bacf7ccd3180555a646e6a02f}
+
+
+Obtiene si el estado es de aceptación. 
+
+\begin{DoxyReturn}{Devuelve}
+T\+R\+U\+E si el estado es de aceptación 
+\end{DoxyReturn}
+\hypertarget{classstate_a18a1f9add291e9aa896b8baa9ed1dbe4}{}\index{state@{state}!is\+\_\+deadstate@{is\+\_\+deadstate}}
+\index{is\+\_\+deadstate@{is\+\_\+deadstate}!state@{state}}
+\subsubsection[{is\+\_\+deadstate(vector$<$ transition\+\_\+t $>$)}]{\setlength{\rightskip}{0pt plus 5cm}bool state\+::is\+\_\+deadstate (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf transition\+\_\+t} $>$}]{trans}
+\end{DoxyParamCaption}
+)}\label{classstate_a18a1f9add291e9aa896b8baa9ed1dbe4}
+
+
+Obtiene si el estado es de muerte. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Conjunto} & de transiciones del autómata \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+T\+R\+U\+E si el estado es de muerte 
+\end{DoxyReturn}
+\hypertarget{classstate_ac9e58d75849a619942eedde3576ffefd}{}\index{state@{state}!operator==@{operator==}}
+\index{operator==@{operator==}!state@{state}}
+\subsubsection[{operator==(const state \&\+Q) const }]{\setlength{\rightskip}{0pt plus 5cm}bool state\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf state} \&}]{Q}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classstate_ac9e58d75849a619942eedde3576ffefd}
+
+
+Sobrecarga del operador de comparación. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve si los estados son iguales 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+state.\+hpp\item 
+state.\+cpp\end{DoxyCompactItemize}

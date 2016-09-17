@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Práctica 4: Fichero Fuente transition_t.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica 4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">transition_t.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;state.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="classstate.html">state</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classtransition__t.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classtransition__t.html">transition_t</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classtransition__t.html#a7dd43b71a5592511682d1055bacc4e30">   15</a></span>&#160;        <a class="code" href="classstate.html">state</a>* <a class="code" href="classtransition__t.html#a7dd43b71a5592511682d1055bacc4e30">src_</a>;    </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classtransition__t.html#aa8b498692df1561ff2ca6a8146438a6b">   16</a></span>&#160;        <a class="code" href="classstate.html">state</a>* <a class="code" href="classtransition__t.html#aa8b498692df1561ff2ca6a8146438a6b">dest_</a>;   </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classtransition__t.html#a7b2b2e8bcfbb66df6ac6f8666a59a8e7">   17</a></span>&#160;        <span class="keywordtype">char</span> <a class="code" href="classtransition__t.html#a7b2b2e8bcfbb66df6ac6f8666a59a8e7">symbol_</a>;   </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classtransition__t.html#a04ff8486138f334115c79cdfb4e72a78">   19</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classtransition__t.html#a04ff8486138f334115c79cdfb4e72a78">transition_t</a>(<a class="code" href="classstate.html">state</a>&amp; src, <a class="code" href="classstate.html">state</a>&amp; dest, <span class="keywordtype">char</span> symbol): src_(&amp;src), dest_(&amp;dest), symbol_(symbol) {} </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ~<a class="code" href="classtransition__t.html">transition_t</a>() {}; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classtransition__t.html#aac5048fbc4307cc982437e393cf97c89">   21</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classstate.html">state</a>* <a class="code" href="classtransition__t.html#aac5048fbc4307cc982437e393cf97c89">get_src</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> src_; } </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classtransition__t.html#a91eb01ea36496fd40b84f5f68b598ca6">   22</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classstate.html">state</a>* <a class="code" href="classtransition__t.html#a91eb01ea36496fd40b84f5f68b598ca6">get_dest</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> dest_; }    </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classtransition__t.html#a30f07640593000fa0994a852f803f8b6">   23</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">char</span> <a class="code" href="classtransition__t.html#a30f07640593000fa0994a852f803f8b6">get_symbol</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> symbol_; }  </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="ttc" id="classtransition__t_html"><div class="ttname"><a href="classtransition__t.html">transition_t</a></div><div class="ttdoc">Representa una transición para un estado y un símbolo de entrada. </div><div class="ttdef"><b>Definition:</b> transition_t.hpp:13</div></div>
+<div class="ttc" id="classtransition__t_html_a7dd43b71a5592511682d1055bacc4e30"><div class="ttname"><a href="classtransition__t.html#a7dd43b71a5592511682d1055bacc4e30">transition_t::src_</a></div><div class="ttdeci">state * src_</div><div class="ttdoc">Estado inicial. </div><div class="ttdef"><b>Definition:</b> transition_t.hpp:15</div></div>
+<div class="ttc" id="classtransition__t_html_a30f07640593000fa0994a852f803f8b6"><div class="ttname"><a href="classtransition__t.html#a30f07640593000fa0994a852f803f8b6">transition_t::get_symbol</a></div><div class="ttdeci">char get_symbol() const </div><div class="ttdoc">Devuelve el símbolo necesario para la transición. </div><div class="ttdef"><b>Definition:</b> transition_t.hpp:23</div></div>
+<div class="ttc" id="classtransition__t_html_aa8b498692df1561ff2ca6a8146438a6b"><div class="ttname"><a href="classtransition__t.html#aa8b498692df1561ff2ca6a8146438a6b">transition_t::dest_</a></div><div class="ttdeci">state * dest_</div><div class="ttdoc">Estado al que se transita. </div><div class="ttdef"><b>Definition:</b> transition_t.hpp:16</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classtransition__t_html_a04ff8486138f334115c79cdfb4e72a78"><div class="ttname"><a href="classtransition__t.html#a04ff8486138f334115c79cdfb4e72a78">transition_t::transition_t</a></div><div class="ttdeci">transition_t(state &amp;src, state &amp;dest, char symbol)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> transition_t.hpp:19</div></div>
+<div class="ttc" id="classtransition__t_html_a7b2b2e8bcfbb66df6ac6f8666a59a8e7"><div class="ttname"><a href="classtransition__t.html#a7b2b2e8bcfbb66df6ac6f8666a59a8e7">transition_t::symbol_</a></div><div class="ttdeci">char symbol_</div><div class="ttdoc">Símbolo de entrada para el estado inicial. </div><div class="ttdef"><b>Definition:</b> transition_t.hpp:17</div></div>
+<div class="ttc" id="classtransition__t_html_aac5048fbc4307cc982437e393cf97c89"><div class="ttname"><a href="classtransition__t.html#aac5048fbc4307cc982437e393cf97c89">transition_t::get_src</a></div><div class="ttdeci">state * get_src() const </div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> transition_t.hpp:21</div></div>
+<div class="ttc" id="classstate_html"><div class="ttname"><a href="classstate.html">state</a></div><div class="ttdoc">Representa un estado del autómata. </div><div class="ttdef"><b>Definition:</b> state.hpp:16</div></div>
+<div class="ttc" id="classtransition__t_html_a91eb01ea36496fd40b84f5f68b598ca6"><div class="ttname"><a href="classtransition__t.html#a91eb01ea36496fd40b84f5f68b598ca6">transition_t::get_dest</a></div><div class="ttdeci">state * get_dest() const </div><div class="ttdoc">Devuelve el estado final. </div><div class="ttdef"><b>Definition:</b> transition_t.hpp:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

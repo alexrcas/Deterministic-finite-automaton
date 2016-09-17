@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Práctica 4: Fichero Fuente delta.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica 4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">delta.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;transition_t.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;state.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classdelta.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classdelta.html">delta</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classdelta.html#aad22330f3e8308505fef99eafe8d8edb">   14</a></span>&#160;        vector&lt;transition_t&gt; <a class="code" href="classdelta.html#aad22330f3e8308505fef99eafe8d8edb">E_</a>; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classdelta.html#a435f658a4e7efcf415b8b5c0c719ebc2">   16</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classdelta.html#a435f658a4e7efcf415b8b5c0c719ebc2">delta</a>() {} </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classdelta.html#ae8501f76d2bd17cce5a65b89b82a6ed0">   17</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classdelta.html#ae8501f76d2bd17cce5a65b89b82a6ed0">~delta</a>() {}  </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classstate.html">state</a>* get_transition(<a class="code" href="classstate.html">state</a>&amp;, <span class="keywordtype">char</span>); </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classdelta.html#ad6da0f0ae180e4315634dd9bf06aecc6">   19</a></span>&#160;        <span class="keyword">inline</span> vector&lt;transition_t&gt;&amp; <span class="keyword">get</span>() { <span class="keywordflow">return</span> E_; }   </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classdelta_html"><div class="ttname"><a href="classdelta.html">delta</a></div><div class="ttdoc">Representa la función de transición. </div><div class="ttdef"><b>Definition:</b> delta.hpp:12</div></div>
+<div class="ttc" id="classdelta_html_ae8501f76d2bd17cce5a65b89b82a6ed0"><div class="ttname"><a href="classdelta.html#ae8501f76d2bd17cce5a65b89b82a6ed0">delta::~delta</a></div><div class="ttdeci">~delta()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> delta.hpp:17</div></div>
+<div class="ttc" id="classstate_html"><div class="ttname"><a href="classstate.html">state</a></div><div class="ttdoc">Representa un estado del autómata. </div><div class="ttdef"><b>Definition:</b> state.hpp:16</div></div>
+<div class="ttc" id="classdelta_html_a435f658a4e7efcf415b8b5c0c719ebc2"><div class="ttname"><a href="classdelta.html#a435f658a4e7efcf415b8b5c0c719ebc2">delta::delta</a></div><div class="ttdeci">delta()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> delta.hpp:16</div></div>
+<div class="ttc" id="classdelta_html_aad22330f3e8308505fef99eafe8d8edb"><div class="ttname"><a href="classdelta.html#aad22330f3e8308505fef99eafe8d8edb">delta::E_</a></div><div class="ttdeci">vector&lt; transition_t &gt; E_</div><div class="ttdoc">Conjunto de transiciones. </div><div class="ttdef"><b>Definition:</b> delta.hpp:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

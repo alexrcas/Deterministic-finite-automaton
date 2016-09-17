@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Práctica 4: Fichero Fuente state.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica 4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">state.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;transition_t.hpp&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="classtransition__t.html">transition_t</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classstate.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classstate.html">state</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classstate.html#a60c5078c3ac59b85ac4b77157fe91d01">   18</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classstate.html#a60c5078c3ac59b85ac4b77157fe91d01">id_</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classstate.html#ad16d75b8aaa4a1fed6eb97be5d107d77">   19</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classstate.html#ad16d75b8aaa4a1fed6eb97be5d107d77">accept_</a>;   </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classstate.html#aee920d9f534640451f22b3525f9cb9de">   21</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classstate.html#aee920d9f534640451f22b3525f9cb9de">state</a>(): id_(0), accept_(false) {}   </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classstate.html#a4a06c3b99fef0260bb8de5e8d8ba2d16">   22</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classstate.html#a4a06c3b99fef0260bb8de5e8d8ba2d16">state</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">bool</span> accept): id_(id), accept_(accept) {} </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classstate.html#af2f12478890cae48ded72bf564f9d340">   23</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classstate.html#af2f12478890cae48ded72bf564f9d340">state</a>(<span class="keyword">const</span> <a class="code" href="classstate.html">state</a>&amp; Q): id_(Q.id_), accept_(Q.accept_) {}</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classstate.html#a60216b51b01ca0ebe9786ec2da66568f">   24</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classstate.html#a60216b51b01ca0ebe9786ec2da66568f">~state</a>() {} </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classstate.html#a49f9a14bacf7ccd3180555a646e6a02f">   25</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classstate.html#a49f9a14bacf7ccd3180555a646e6a02f">is_accept</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> accept_; }   </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classstate.html#a5c4e93170fd515a2d3e6e9d392b29d2f">   26</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span>&amp; <a class="code" href="classstate.html#a5c4e93170fd515a2d3e6e9d392b29d2f">get_accept</a>() { <span class="keywordflow">return</span> accept_; }   </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classstate.html#a6e5e89c3ed6c2e2594bc1a8bf03bdc1e">   27</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="classstate.html#a6e5e89c3ed6c2e2594bc1a8bf03bdc1e">get_id</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> id_; }   </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classstate.html#a68ce8440ba42436828362ded2edd8d87">   28</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">int</span>&amp; <a class="code" href="classstate.html#a68ce8440ba42436828362ded2edd8d87">get_id</a>() { <span class="keywordflow">return</span> id_; }    </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classstate.html#ac9e58d75849a619942eedde3576ffefd">   29</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classstate.html#ac9e58d75849a619942eedde3576ffefd">operator==</a>(<span class="keyword">const</span> <a class="code" href="classstate.html">state</a>&amp; Q)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> id_ == Q.<a class="code" href="classstate.html#a60c5078c3ac59b85ac4b77157fe91d01">id_</a>; }   </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> is_deadstate(vector&lt;transition_t&gt;);    </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> print();   </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="ttc" id="classstate_html_aee920d9f534640451f22b3525f9cb9de"><div class="ttname"><a href="classstate.html#aee920d9f534640451f22b3525f9cb9de">state::state</a></div><div class="ttdeci">state()</div><div class="ttdoc">Constructor por defecto. </div><div class="ttdef"><b>Definition:</b> state.hpp:21</div></div>
+<div class="ttc" id="classtransition__t_html"><div class="ttname"><a href="classtransition__t.html">transition_t</a></div><div class="ttdoc">Representa una transición para un estado y un símbolo de entrada. </div><div class="ttdef"><b>Definition:</b> transition_t.hpp:13</div></div>
+<div class="ttc" id="classstate_html_af2f12478890cae48ded72bf564f9d340"><div class="ttname"><a href="classstate.html#af2f12478890cae48ded72bf564f9d340">state::state</a></div><div class="ttdeci">state(const state &amp;Q)</div><div class="ttdoc">Constructor de copia. </div><div class="ttdef"><b>Definition:</b> state.hpp:23</div></div>
+<div class="ttc" id="classstate_html_ad16d75b8aaa4a1fed6eb97be5d107d77"><div class="ttname"><a href="classstate.html#ad16d75b8aaa4a1fed6eb97be5d107d77">state::accept_</a></div><div class="ttdeci">bool accept_</div><div class="ttdoc">Indica si el estado es de aceptación. </div><div class="ttdef"><b>Definition:</b> state.hpp:19</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classstate_html_a60216b51b01ca0ebe9786ec2da66568f"><div class="ttname"><a href="classstate.html#a60216b51b01ca0ebe9786ec2da66568f">state::~state</a></div><div class="ttdeci">~state()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> state.hpp:24</div></div>
+<div class="ttc" id="classstate_html_a6e5e89c3ed6c2e2594bc1a8bf03bdc1e"><div class="ttname"><a href="classstate.html#a6e5e89c3ed6c2e2594bc1a8bf03bdc1e">state::get_id</a></div><div class="ttdeci">int get_id() const </div><div class="ttdoc">Devuelve la ID del estado. </div><div class="ttdef"><b>Definition:</b> state.hpp:27</div></div>
+<div class="ttc" id="classstate_html_a5c4e93170fd515a2d3e6e9d392b29d2f"><div class="ttname"><a href="classstate.html#a5c4e93170fd515a2d3e6e9d392b29d2f">state::get_accept</a></div><div class="ttdeci">bool &amp; get_accept()</div><div class="ttdoc">Obtiene si el estado es de aceptación. </div><div class="ttdef"><b>Definition:</b> state.hpp:26</div></div>
+<div class="ttc" id="classstate_html_a4a06c3b99fef0260bb8de5e8d8ba2d16"><div class="ttname"><a href="classstate.html#a4a06c3b99fef0260bb8de5e8d8ba2d16">state::state</a></div><div class="ttdeci">state(int id, bool accept)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> state.hpp:22</div></div>
+<div class="ttc" id="classstate_html_a60c5078c3ac59b85ac4b77157fe91d01"><div class="ttname"><a href="classstate.html#a60c5078c3ac59b85ac4b77157fe91d01">state::id_</a></div><div class="ttdeci">int id_</div><div class="ttdoc">ID del estado. </div><div class="ttdef"><b>Definition:</b> state.hpp:18</div></div>
+<div class="ttc" id="classstate_html"><div class="ttname"><a href="classstate.html">state</a></div><div class="ttdoc">Representa un estado del autómata. </div><div class="ttdef"><b>Definition:</b> state.hpp:16</div></div>
+<div class="ttc" id="classstate_html_ac9e58d75849a619942eedde3576ffefd"><div class="ttname"><a href="classstate.html#ac9e58d75849a619942eedde3576ffefd">state::operator==</a></div><div class="ttdeci">bool operator==(const state &amp;Q) const </div><div class="ttdoc">Sobrecarga del operador de comparación. </div><div class="ttdef"><b>Definition:</b> state.hpp:29</div></div>
+<div class="ttc" id="classstate_html_a68ce8440ba42436828362ded2edd8d87"><div class="ttname"><a href="classstate.html#a68ce8440ba42436828362ded2edd8d87">state::get_id</a></div><div class="ttdeci">int &amp; get_id()</div><div class="ttdoc">Devuelve la ID del estado. </div><div class="ttdef"><b>Definition:</b> state.hpp:28</div></div>
+<div class="ttc" id="classstate_html_a49f9a14bacf7ccd3180555a646e6a02f"><div class="ttname"><a href="classstate.html#a49f9a14bacf7ccd3180555a646e6a02f">state::is_accept</a></div><div class="ttdeci">bool is_accept() const </div><div class="ttdoc">Obtiene si el estado es de aceptación. </div><div class="ttdef"><b>Definition:</b> state.hpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

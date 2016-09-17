@@ -1,0 +1,237 @@
+\hypertarget{classdfa}{}\section{Referencia de la Clase dfa}
+\label{classdfa}\index{dfa@{dfa}}
+
+
+Representa un Autómata Finito Determinista.  
+
+
+
+
+{\ttfamily \#include $<$dfa.\+hpp$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdfa_a7b75496b449bb8519abf14d1507322b1}{dfa} (ifstream \&)
+\item 
+\hypertarget{classdfa_a0886b3b3873afc65717520f896fe21a4}{}\hyperlink{classdfa_a0886b3b3873afc65717520f896fe21a4}{$\sim$dfa} ()\label{classdfa_a0886b3b3873afc65717520f896fe21a4}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classdfa_a85e426c283ac1551d8aac804c01505ec}{trace\+\_\+string} (char $\ast$string)
+\begin{DoxyCompactList}\small\item\em Traza una cadena. \end{DoxyCompactList}\item 
+\hypertarget{classdfa_a4d32adecf0f1ebf96ef9e258278062aa}{}void \hyperlink{classdfa_a4d32adecf0f1ebf96ef9e258278062aa}{print\+\_\+info} ()\label{classdfa_a4d32adecf0f1ebf96ef9e258278062aa}
+
+\begin{DoxyCompactList}\small\item\em Muestra el fichero de entrada. \end{DoxyCompactList}\item 
+\hypertarget{classdfa_ac07d3b722dd79e569ba8ed8fba089e1b}{}void \hyperlink{classdfa_ac07d3b722dd79e569ba8ed8fba089e1b}{print\+\_\+\+D\+F\+A} ()\label{classdfa_ac07d3b722dd79e569ba8ed8fba089e1b}
+
+\begin{DoxyCompactList}\small\item\em Muestra el D\+F\+A. \end{DoxyCompactList}\item 
+\hypertarget{classdfa_abf8976cebf8bba5b843442ab3fd836f1}{}void \hyperlink{classdfa_abf8976cebf8bba5b843442ab3fd836f1}{print\+\_\+dead\+\_\+states} ()\label{classdfa_abf8976cebf8bba5b843442ab3fd836f1}
+
+\begin{DoxyCompactList}\small\item\em Muestra los estados de muerte. \end{DoxyCompactList}\item 
+void \hyperlink{classdfa_a26fb1639aa9a6a5d9d8a079fd1989d0e}{minimize} ()
+\begin{DoxyCompactList}\small\item\em Minimiza el D\+F\+A. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ set$<$ \hyperlink{classstate}{state} $\ast$ $>$ $>$ \hyperlink{classdfa_a23c531657e7259ffffd6a3fcf4b02691}{init\+\_\+minimize} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el conjunto P\+I para comenzar a aplicar el algoritmo de minimización. \end{DoxyCompactList}\item 
+int \hyperlink{classdfa_af77ee3f7303bf187565a3740f8653797}{get\+\_\+subset} (set$<$ set$<$ \hyperlink{classstate}{state} $\ast$ $>$ $>$, \hyperlink{classstate}{state} \&, char)
+\begin{DoxyCompactList}\small\item\em Obtiene el índice del subconjunto al que transita un estado con un símbolo. \end{DoxyCompactList}\item 
+set$<$ set$<$ \hyperlink{classstate}{state} $\ast$ $>$ $>$ \hyperlink{classdfa_ab903e23857c42839f688e93c2d1cfc94}{descomp} (set$<$ set$<$ \hyperlink{classstate}{state} $\ast$ $>$ $>$, char)
+\begin{DoxyCompactList}\small\item\em Parte los subconjuntos en otros más pequeños con un símmbolo. \end{DoxyCompactList}\item 
+\hypertarget{classdfa_abcb8030d15366bc21c1a27432c05bab5}{}void {\bfseries build\+\_\+minimized} (set$<$ set$<$ \hyperlink{classstate}{state} $\ast$ $>$ $>$)\label{classdfa_abcb8030d15366bc21c1a27432c05bab5}
+
+\item 
+bool \hyperlink{classdfa_a30c15f90f675b48d8259a50751a53cdf}{accept\+\_\+subset} (set$<$ \hyperlink{classstate}{state} $\ast$ $>$)
+\begin{DoxyCompactList}\small\item\em Obtiene si en un conjunto se encuentra algún estado de aceptación. \end{DoxyCompactList}\item 
+void \hyperlink{classdfa_a4d1547f6524fefbcda953e6113118c28}{print\+\_\+set} (set$<$ \hyperlink{classstate}{state} $\ast$ $>$ Q)
+\begin{DoxyCompactList}\small\item\em Imprime un set de estados. \end{DoxyCompactList}\item 
+void \hyperlink{classdfa_a1c6926b7cbff111a10a1276c7a1ac512}{print\+\_\+pi} (set$<$ set$<$ \hyperlink{classstate}{state} $\ast$ $>$ $>$ P)
+\begin{DoxyCompactList}\small\item\em Imprime un set que contiene sets de estados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classdfa_a3b41a4d61f1cc57c768d70bae3cecb0b}{}vector$<$ \hyperlink{classstate}{state} $>$ \hyperlink{classdfa_a3b41a4d61f1cc57c768d70bae3cecb0b}{Q\+\_\+}\label{classdfa_a3b41a4d61f1cc57c768d70bae3cecb0b}
+
+\begin{DoxyCompactList}\small\item\em Conjunto de estados. \end{DoxyCompactList}\item 
+\hypertarget{classdfa_a91c828febe28d9e74dc77f5682a66e47}{}set$<$ char $>$ \hyperlink{classdfa_a91c828febe28d9e74dc77f5682a66e47}{E\+\_\+}\label{classdfa_a91c828febe28d9e74dc77f5682a66e47}
+
+\begin{DoxyCompactList}\small\item\em Alfabeto. \end{DoxyCompactList}\item 
+\hypertarget{classdfa_a40b53398c27f6237e9af6db2ce10c21a}{}\hyperlink{classdelta}{delta} \hyperlink{classdfa_a40b53398c27f6237e9af6db2ce10c21a}{D\+\_\+}\label{classdfa_a40b53398c27f6237e9af6db2ce10c21a}
+
+\begin{DoxyCompactList}\small\item\em Función de transición. \end{DoxyCompactList}\item 
+\hypertarget{classdfa_a2f92fe1842de353d0325993b36b476a8}{}unsigned int \hyperlink{classdfa_a2f92fe1842de353d0325993b36b476a8}{S\+\_\+}\label{classdfa_a2f92fe1842de353d0325993b36b476a8}
+
+\begin{DoxyCompactList}\small\item\em I\+D del estado inicial. \end{DoxyCompactList}\item 
+\hypertarget{classdfa_a5fe087486efff9153ef49810b757e43b}{}ifstream $\ast$ \hyperlink{classdfa_a5fe087486efff9153ef49810b757e43b}{file\+\_\+}\label{classdfa_a5fe087486efff9153ef49810b757e43b}
+
+\begin{DoxyCompactList}\small\item\em Fichero de entrada. \end{DoxyCompactList}\item 
+\hypertarget{classdfa_a802b0aa1e23f75956e419516a883a333}{}int {\bfseries nt\+\_\+}\label{classdfa_a802b0aa1e23f75956e419516a883a333}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un Autómata Finito Determinista. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classdfa_a7b75496b449bb8519abf14d1507322b1}{}\index{dfa@{dfa}!dfa@{dfa}}
+\index{dfa@{dfa}!dfa@{dfa}}
+\subsubsection[{dfa(ifstream \&)}]{\setlength{\rightskip}{0pt plus 5cm}dfa\+::dfa (
+\begin{DoxyParamCaption}
+\item[{ifstream \&}]{file}
+\end{DoxyParamCaption}
+)}\label{classdfa_a7b75496b449bb8519abf14d1507322b1}
+
+
+
+
+
+\begin{DoxyParams}{Parámetros}
+{\em file} & Fichero de entrada \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classdfa_a30c15f90f675b48d8259a50751a53cdf}{}\index{dfa@{dfa}!accept\+\_\+subset@{accept\+\_\+subset}}
+\index{accept\+\_\+subset@{accept\+\_\+subset}!dfa@{dfa}}
+\subsubsection[{accept\+\_\+subset(set$<$ state $\ast$ $>$)}]{\setlength{\rightskip}{0pt plus 5cm}bool dfa\+::accept\+\_\+subset (
+\begin{DoxyParamCaption}
+\item[{set$<$ {\bf state} $\ast$ $>$}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classdfa_a30c15f90f675b48d8259a50751a53cdf}
+
+
+Obtiene si en un conjunto se encuentra algún estado de aceptación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Q} & set de estados \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve si el conjunto es de aceptación 
+\end{DoxyReturn}
+\hypertarget{classdfa_ab903e23857c42839f688e93c2d1cfc94}{}\index{dfa@{dfa}!descomp@{descomp}}
+\index{descomp@{descomp}!dfa@{dfa}}
+\subsubsection[{descomp(set$<$ set$<$ state $\ast$ $>$ $>$, char)}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ set$<$ {\bf state} $\ast$ $>$ $>$ dfa\+::descomp (
+\begin{DoxyParamCaption}
+\item[{set$<$ set$<$ {\bf state} $\ast$ $>$ $>$}]{P, }
+\item[{char}]{symbol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classdfa_ab903e23857c42839f688e93c2d1cfc94}
+
+
+Parte los subconjuntos en otros más pequeños con un símmbolo. 
+
+\begin{DoxyReturn}{Devuelve}
+Nuevo conjunto de particiones 
+\end{DoxyReturn}
+\hypertarget{classdfa_af77ee3f7303bf187565a3740f8653797}{}\index{dfa@{dfa}!get\+\_\+subset@{get\+\_\+subset}}
+\index{get\+\_\+subset@{get\+\_\+subset}!dfa@{dfa}}
+\subsubsection[{get\+\_\+subset(set$<$ set$<$ state $\ast$ $>$ $>$, state \&, char)}]{\setlength{\rightskip}{0pt plus 5cm}int dfa\+::get\+\_\+subset (
+\begin{DoxyParamCaption}
+\item[{set$<$ set$<$ {\bf state} $\ast$ $>$ $>$}]{P, }
+\item[{{\bf state} \&}]{Q, }
+\item[{char}]{S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classdfa_af77ee3f7303bf187565a3740f8653797}
+
+
+Obtiene el índice del subconjunto al que transita un estado con un símbolo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em P} & Conjunto de particiones \\
+\hline
+{\em Q} & Estado \\
+\hline
+{\em S} & Símbolo de entrada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Índice del subconjunto 
+\end{DoxyReturn}
+\hypertarget{classdfa_a23c531657e7259ffffd6a3fcf4b02691}{}\index{dfa@{dfa}!init\+\_\+minimize@{init\+\_\+minimize}}
+\index{init\+\_\+minimize@{init\+\_\+minimize}!dfa@{dfa}}
+\subsubsection[{init\+\_\+minimize()}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ set$<$ {\bf state} $\ast$ $>$ $>$ dfa\+::init\+\_\+minimize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classdfa_a23c531657e7259ffffd6a3fcf4b02691}
+
+
+Inicializa el conjunto P\+I para comenzar a aplicar el algoritmo de minimización. 
+
+\begin{DoxyReturn}{Devuelve}
+Conjunto que contiene el subconjunto de estados finales y no finales 
+\end{DoxyReturn}
+\hypertarget{classdfa_a26fb1639aa9a6a5d9d8a079fd1989d0e}{}\index{dfa@{dfa}!minimize@{minimize}}
+\index{minimize@{minimize}!dfa@{dfa}}
+\subsubsection[{minimize()}]{\setlength{\rightskip}{0pt plus 5cm}void dfa\+::minimize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classdfa_a26fb1639aa9a6a5d9d8a079fd1989d0e}
+
+
+Minimiza el D\+F\+A. 
+
+Obtiene el D\+F\+A mínimo. \hypertarget{classdfa_a1c6926b7cbff111a10a1276c7a1ac512}{}\index{dfa@{dfa}!print\+\_\+pi@{print\+\_\+pi}}
+\index{print\+\_\+pi@{print\+\_\+pi}!dfa@{dfa}}
+\subsubsection[{print\+\_\+pi(set$<$ set$<$ state $\ast$ $>$ $>$ P)}]{\setlength{\rightskip}{0pt plus 5cm}void dfa\+::print\+\_\+pi (
+\begin{DoxyParamCaption}
+\item[{set$<$ set$<$ {\bf state} $\ast$ $>$ $>$}]{P}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classdfa_a1c6926b7cbff111a10a1276c7a1ac512}
+
+
+Imprime un set que contiene sets de estados. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Q} & Set de sets de estados \\
+\hline
+\end{DoxyParams}
+\hypertarget{classdfa_a4d1547f6524fefbcda953e6113118c28}{}\index{dfa@{dfa}!print\+\_\+set@{print\+\_\+set}}
+\index{print\+\_\+set@{print\+\_\+set}!dfa@{dfa}}
+\subsubsection[{print\+\_\+set(set$<$ state $\ast$ $>$ Q)}]{\setlength{\rightskip}{0pt plus 5cm}void dfa\+::print\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{set$<$ {\bf state} $\ast$ $>$}]{Q}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classdfa_a4d1547f6524fefbcda953e6113118c28}
+
+
+Imprime un set de estados. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Q} & Set de estados \\
+\hline
+\end{DoxyParams}
+\hypertarget{classdfa_a85e426c283ac1551d8aac804c01505ec}{}\index{dfa@{dfa}!trace\+\_\+string@{trace\+\_\+string}}
+\index{trace\+\_\+string@{trace\+\_\+string}!dfa@{dfa}}
+\subsubsection[{trace\+\_\+string(char $\ast$string)}]{\setlength{\rightskip}{0pt plus 5cm}bool dfa\+::trace\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}\label{classdfa_a85e426c283ac1551d8aac804c01505ec}
+
+
+Traza una cadena. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em Cadena} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+T\+R\+U\+E si la cadena es aceptada 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+dfa.\+hpp\item 
+dfa.\+cpp\end{DoxyCompactItemize}
